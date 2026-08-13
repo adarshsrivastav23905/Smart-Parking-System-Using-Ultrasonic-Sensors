@@ -508,12 +508,12 @@ The four-slot Smart Parking System has been implemented and successfully validat
 
 ## 👨‍🎓 Author
 
-**Vayunandan Mishra**
+**Adarsh Srivastav**
 
-Electronics and Communication Engineering (ECE) Student
+Computer Science and Engineering (CSE) Student
 
 **Areas of Interest:**  
-Embedded Systems | IoT | AI | Python | Electronics | Automation
+Embedded Systems | IoT | AI | Python
 
 ## ⭐ Conclusion
 
