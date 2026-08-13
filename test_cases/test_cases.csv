@@ -1,0 +1,11 @@
+Test ID,Scenario,Sensor 1,Sensor 2,Sensor 3,Sensor 4,Expected Available,Expected Status,Result
+TC01,All slots free,30,30,30,30,4,All Slots Free,PASS
+TC02,One slot occupied,10,30,30,30,3,One Occupied,PASS
+TC03,Two slots occupied,10,10,30,30,2,Two Occupied,PASS
+TC04,Three slots occupied,10,10,10,30,1,Three Occupied,PASS
+TC05,All slots occupied,10,10,10,10,0,Parking Full,PASS
+TC06,Vehicle leaves,10,10,30,10,1,Slot Available,PASS
+TC07,Invalid sensor reading,Invalid,30,30,30,3,Sensor Error Handling,PASS
+TC08,LCD update,30,30,30,30,4,Available Display,PASS
+TC09,LED indication,30,30,30,30,4,Green LED ON,PASS
+TC10,Parking full alert,10,10,10,10,0,Buzzer ON,PASS
