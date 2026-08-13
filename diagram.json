@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "author": "Adarsh",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 20,
+      "left": 20,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sensor1",
+      "top": 20,
+      "left": 380,
+      "attrs": {
+        "distance": "100"
+      }
+    },
+
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sensor2",
+      "top": 145,
+      "left": 380,
+      "attrs": {
+        "distance": "100"
+      }
+    },
+
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sensor3",
+      "top": 270,
+      "left": 380,
+      "attrs": {
+        "distance": "100"
+      }
+    },
+
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sensor4",
+      "top": 395,
+      "left": 380,
+      "attrs": {
+        "distance": "100"
+      }
+    },
+
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "top": 520,
+      "left": 20,
+      "attrs": {
+        "pins": "i2c",
+        "i2cAddress": "0x20"
+      }
+    },
+
+    {
+      "type": "wokwi-resistor",
+      "id": "greenResistor",
+      "top": 90,
+      "left": 690,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+
+    {
+      "type": "wokwi-led",
+      "id": "greenLed",
+      "top": 160,
+      "left": 690,
+      "attrs": {
+        "color": "green"
+      }
+    },
+
+    {
+      "type": "wokwi-resistor",
+      "id": "redResistor",
+      "top": 240,
+      "left": 690,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+
+    {
+      "type": "wokwi-led",
+      "id": "redLed",
+      "top": 310,
+      "left": 690,
+      "attrs": {
+        "color": "red"
+      }
+    },
+
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer",
+      "top": 400,
+      "left": 700,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-servo",
+      "id": "servo",
+      "top": 520,
+      "left": 650,
+      "attrs": {
+        "horn": "single"
+      }
+    }
+  ],
+
+  "connections": [
+
+    ["sensor1:VCC", "uno:5V", "red", []],
+    ["sensor1:GND", "uno:GND.1", "black", []],
+    ["sensor1:TRIG", "uno:2", "green", []],
+    ["sensor1:ECHO", "uno:3", "blue", []],
+
+    ["sensor2:VCC", "uno:5V", "red", []],
+    ["sensor2:GND", "uno:GND.1", "black", []],
+    ["sensor2:TRIG", "uno:4", "green", []],
+    ["sensor2:ECHO", "uno:5", "blue", []],
+
+    ["sensor3:VCC", "uno:5V", "red", []],
+    ["sensor3:GND", "uno:GND.1", "black", []],
+    ["sensor3:TRIG", "uno:6", "green", []],
+    ["sensor3:ECHO", "uno:7", "blue", []],
+
+    ["sensor4:VCC", "uno:5V", "red", []],
+    ["sensor4:GND", "uno:GND.1", "black", []],
+    ["sensor4:TRIG", "uno:8", "green", []],
+    ["sensor4:ECHO", "uno:9", "blue", []],
+
+    ["lcd:VCC", "uno:5V", "red", []],
+    ["lcd:GND", "uno:GND.1", "black", []],
+    ["lcd:SDA", "uno:A4", "green", []],
+    ["lcd:SCL", "uno:A5", "blue", []],
+
+    ["uno:10", "greenResistor:1", "green", []],
+    ["greenResistor:2", "greenLed:A", "green", []],
+    ["greenLed:C", "uno:GND.1", "black", []],
+
+    ["uno:11", "redResistor:1", "red", []],
+    ["redResistor:2", "redLed:A", "red", []],
+    ["redLed:C", "uno:GND.1", "black", []],
+
+    ["uno:12", "buzzer:2", "purple", []],
+    ["buzzer:1", "uno:GND.1", "black", []],
+
+    ["servo:PWM", "uno:A0", "orange", []],
+    ["servo:V+", "uno:5V", "red", []],
+    ["servo:GND", "uno:GND.1", "black", []]
+  ],
+
+  "serialMonitor": {
+    "display": "always",
+    "newline": "lf",
+    "convertEol": true
+  }
+}
