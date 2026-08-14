@@ -1,0 +1,7 @@
+Test ID,Scenario,Expected,Actual,Status
+TC01,All slots free,Available 4,Available 4,PASS
+TC02,One slot occupied,Available 3,Available 3,PASS
+TC03,Two slots occupied,Available 2,Available 2,PASS
+TC04,Three slots occupied,Available 1,Available 1,PASS
+TC05,All slots occupied,Parking Full,Parking Full,PASS
+TC06,Vehicle leaves,Available increases,Available increases,PASS

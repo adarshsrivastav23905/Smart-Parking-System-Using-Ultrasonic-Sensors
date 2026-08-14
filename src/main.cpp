@@ -41,7 +41,7 @@ const int GATE_OPEN   = 90;
 // Parking configuration
 // -----------------------------
 const byte TOTAL_SLOTS = 4;
-const float OCCUPIED_THRESHOLD = 20.0;
+const float OCCUPIED_THRESHOLD =15.0;
 
 // -----------------------------
 // Timing

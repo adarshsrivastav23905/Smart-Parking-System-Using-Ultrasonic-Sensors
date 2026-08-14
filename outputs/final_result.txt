@@ -1,0 +1,15 @@
+FINAL RESULT
+
+The Smart Parking System successfully detects the occupancy
+status of four parking slots using HC-SR04 ultrasonic sensors.
+
+The system successfully:
+- Measures parking-slot distance
+- Detects FREE/OCCUPIED status
+- Counts available slots
+- Displays availability on LCD
+- Controls green/red indicators
+- Activates the buzzer when parking is full
+
+The complete prototype was successfully tested using Wokwi
+virtual simulation.

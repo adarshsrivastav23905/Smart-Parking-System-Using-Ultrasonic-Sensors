@@ -1,0 +1,25 @@
+SMART PARKING SYSTEM - FINAL OUTPUT
+
+Scenario 1:
+All slots free
+Available Slots = 4
+
+Scenario 2:
+One slot occupied
+Available Slots = 3
+
+Scenario 3:
+Two slots occupied
+Available Slots = 2
+
+Scenario 4:
+Three slots occupied
+Available Slots = 1
+
+Scenario 5:
+All slots occupied
+Available Slots = 0
+Status = PARKING FULL
+Red LED = ON
+Green LED = OFF
+Buzzer = ON

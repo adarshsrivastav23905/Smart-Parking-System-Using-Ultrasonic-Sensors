@@ -1,0 +1,19 @@
+Smart Parking System
+
+Parking Slot Status
+-------------------
+Slot 1: 29.05 cm - FREE
+Slot 2: 29.05 cm - FREE
+Slot 3: 29.05 cm - FREE
+Slot 4: 29.05 cm - FREE
+-------------------
+Available Slots: 4
+
+Parking Slot Status
+-------------------
+Slot 1: 12.01 cm - OCCUPIED
+Slot 2: 12.01 cm - OCCUPIED
+Slot 3: 12.13 cm - OCCUPIED
+Slot 4: 9.09 cm - OCCUPIED
+-------------------
+Available Slots: 0
