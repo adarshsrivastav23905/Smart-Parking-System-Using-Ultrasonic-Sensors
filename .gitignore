@@ -1,100 +1,10 @@
-# ==========================================
-
-# Smart Parking System - Git Ignore
-
-# ==========================================
-
-# VS Code
-
-.vscode/
-*.code-workspace
-
-# PlatformIO
-
 .pio/
-.piolibdeps/
-.platformio/
-
-# Arduino temporary/build files
-
-build/
-*.hex
-*.elf
-*.eep
-*.map
-*.bin
-
-# Temporary files
-
-*.tmp
-*.temp
-*.bak
-*.swp
-*.swo
-
-# Logs
-
+.vscode/
 *.log
-
-# Operating System files
-
+*.tmp
+*.bak
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# Python cache (if used for future scripts)
-
-**pycache**/
-*.py[cod]
-
-# Jupyter Notebook checkpoints
-
-.ipynb_checkpoints/
-
-# Environment files
-
 .env
-.env.*
-!.env.example
-
-# IDE temporary files
-
-.idea/
-*.iml
-
-# Backup files
-
-*~
-#*#
-
-# ==========================================
-
-# DO NOT IGNORE PROJECT FILES
-
-# ==========================================
-
-# The following should remain tracked:
-
-# src/
-
-# arduino_code/
-
-# simulation/
-
-# circuit_diagram/
-
-# data/
-
-# test_cases/
-
-# outputs/
-
-# screenshots/
-
-# docs/
-
-# reports/
-
-# README.md
-
-# platformio.ini
+secrets.h
+wifi_config.h

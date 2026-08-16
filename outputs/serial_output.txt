@@ -1,19 +1,15 @@
-Smart Parking System
+==============================================
+          SMART PARKING SYSTEM
+==============================================
+Threshold: 35.0 cm
 
-Parking Slot Status
--------------------
-Slot 1: 29.05 cm - FREE
-Slot 2: 29.05 cm - FREE
-Slot 3: 29.05 cm - FREE
-Slot 4: 29.05 cm - FREE
--------------------
-Available Slots: 4
+Slot 1 | Distance: 20.1 cm | Status: OCCUPIED
+Slot 2 | Distance: 79.8 cm | Status: FREE
+Slot 3 | Distance: 21.0 cm | Status: OCCUPIED
+Slot 4 | Distance: 80.2 cm | Status: FREE
 
-Parking Slot Status
--------------------
-Slot 1: 12.01 cm - OCCUPIED
-Slot 2: 12.01 cm - OCCUPIED
-Slot 3: 12.13 cm - OCCUPIED
-Slot 4: 9.09 cm - OCCUPIED
--------------------
-Available Slots: 0
+Available Slots: 2/4
+Occupied Slots: 2/4
+STATUS: SPACE AVAILABLE
+GATE: OPEN
+==============================================
