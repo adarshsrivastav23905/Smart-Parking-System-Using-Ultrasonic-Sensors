@@ -1,15 +1,86 @@
-FINAL RESULT
+SMART PARKING SYSTEM
+FINAL PROJECT RESULT
+====================
 
-The Smart Parking System successfully detects the occupancy
-status of four parking slots using HC-SR04 ultrasonic sensors.
+PROJECT
+-------
+Smart Parking System Using Ultrasonic Sensors
 
-The system successfully:
-- Measures parking-slot distance
-- Detects FREE/OCCUPIED status
-- Counts available slots
-- Displays availability on LCD
-- Controls green/red indicators
-- Activates the buzzer when parking is full
+CONTROLLER
+----------
+ESP32 DevKit
 
-The complete prototype was successfully tested using Wokwi
-virtual simulation.
+PARKING CAPACITY
+----------------
+4 Parking Slots
+
+SENSORS
+-------
+4 × HC-SR04 Ultrasonic Sensors
+
+DETECTION THRESHOLD
+-------------------
+35 cm
+
+DISPLAY
+-------
+SSD1306 OLED 128×64
+
+VISUAL INDICATORS
+-----------------
+4 × Green LEDs
+4 × Red LEDs
+
+AUDIO ALERT
+-----------
+Buzzer
+
+GATE ACTUATOR
+-------------
+SG90 Servo
+
+CONNECTIVITY
+------------
+ESP32 Wi-Fi
+
+WEB INTERFACE
+-------------
+ESP32 HTTP Web Dashboard
+
+SIMULATION
+----------
+Wokwi
+
+DEVELOPMENT ENVIRONMENT
+-----------------------
+Visual Studio Code + PlatformIO
+
+PROGRAMMING LANGUAGE
+--------------------
+Embedded C/C++
+
+CORE FUNCTIONALITY
+------------------
+- Four-slot parking detection
+- Ultrasonic distance measurement
+- FREE/OCCUPIED classification
+- Available-slot counting
+- OLED status display
+- Individual LED indication
+- Parking-full buzzer alert
+- Capacity-based servo gate
+- ESP32 web dashboard
+- Serial monitoring
+- Virtual system testing
+
+VALIDATION
+----------
+Functional virtual prototype validated in Wokwi.
+
+PHYSICAL HARDWARE
+-----------------
+Not available during development; physical validation is not claimed.
+
+PROJECT STATUS
+--------------
+FUNCTIONAL VIRTUAL PROTOTYPE

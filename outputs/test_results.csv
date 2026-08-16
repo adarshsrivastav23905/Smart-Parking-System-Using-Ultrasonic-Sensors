@@ -1,7 +1,14 @@
-Test ID,Scenario,Expected,Actual,Status
-TC01,All slots free,Available 4,Available 4,PASS
-TC02,One slot occupied,Available 3,Available 3,PASS
-TC03,Two slots occupied,Available 2,Available 2,PASS
-TC04,Three slots occupied,Available 1,Available 1,PASS
-TC05,All slots occupied,Parking Full,Parking Full,PASS
-TC06,Vehicle leaves,Available increases,Available increases,PASS
+test_id,scenario,input,expected_result,actual_result,status,evidence
+TC01,All slots free,"80/80/80/80","4/4 available",PENDING,PENDING,04_all_slots_free.png
+TC02,One slot occupied,"20/80/80/80","3/4 available",PENDING,PENDING,05_one_slot_occupied.png
+TC03,Two slots occupied,"20/20/80/80","2/4 available",PENDING,PENDING,06_two_slots_occupied.png
+TC04,Three slots occupied,"20/20/20/80","1/4 available",PENDING,PENDING,07_three_slots_occupied.png
+TC05,Parking full,"20/20/20/20","0/4; buzzer ON; gate CLOSED",PENDING,PENDING,08_parking_full.png
+TC06,Slot becomes free,"20/20/20/80","1/4; buzzer OFF; gate OPEN",PENDING,PENDING,09_servo_reopen.png
+TC07,OLED verification,"20/80/20/80","Correct distance/status/count",PENDING,PENDING,10_oled_distance_status.png
+TC08,Web dashboard,"20/80/20/80","Dashboard matches system state",PENDING,PENDING,15_web_dashboard_mixed.png
+TC09,Green LED,"80 cm","Green LED ON",PENDING,PENDING,11_green_led.png
+TC10,Red LED,"20 cm","Red LED ON",PENDING,PENDING,12_red_led.png
+TC11,Buzzer,"20/20/20/20","Buzzer ON",PENDING,PENDING,13_buzzer.png
+TC12,Servo gate,"Available/full transition","Gate opens and closes correctly",PENDING,PENDING,09_servo_reopen.png
+TC13,System reset,"Restart simulation","System initializes safely",PENDING,PENDING,02_platformio_build_success.png

@@ -1,25 +1,89 @@
-SMART PARKING SYSTEM - FINAL OUTPUT
+SMART PARKING SYSTEM
+PARKING STATUS LOGIC
+====================
 
-Scenario 1:
-All slots free
-Available Slots = 4
+DETECTION RULE
+--------------
+Distance < 35 cm
+    → OCCUPIED
 
-Scenario 2:
-One slot occupied
-Available Slots = 3
+Distance >= 35 cm
+    → FREE
 
-Scenario 3:
-Two slots occupied
-Available Slots = 2
 
-Scenario 4:
-Three slots occupied
-Available Slots = 1
+FREE SLOT
+---------
+Slot State   : FREE
+Green LED    : ON
+Red LED      : OFF
 
-Scenario 5:
-All slots occupied
-Available Slots = 0
-Status = PARKING FULL
-Red LED = ON
-Green LED = OFF
+
+OCCUPIED SLOT
+-------------
+Slot State   : OCCUPIED
+Green LED    : OFF
+Red LED      : ON
+
+
+SPACE AVAILABLE
+---------------
+Condition    : Available Slots > 0
+System       : SPACE AVAILABLE
+Gate         : OPEN
+Buzzer       : OFF
+
+
+PARKING FULL
+------------
+Condition    : Available Slots = 0
+System       : PARKING FULL
+Gate         : CLOSED
+Buzzer       : ON
+Green LEDs   : OFF
+Red LEDs     : ON
+
+
+EXAMPLE STATES
+--------------
+
+4/4 AVAILABLE
+-------------
+S1 = FREE
+S2 = FREE
+S3 = FREE
+S4 = FREE
+Gate = OPEN
+Buzzer = OFF
+
+
+2/4 AVAILABLE
+-------------
+S1 = OCCUPIED
+S2 = FREE
+S3 = OCCUPIED
+S4 = FREE
+Gate = OPEN
+Buzzer = OFF
+
+
+0/4 AVAILABLE
+-------------
+S1 = OCCUPIED
+S2 = OCCUPIED
+S3 = OCCUPIED
+S4 = OCCUPIED
+Gate = CLOSED
 Buzzer = ON
+
+
+SLOT RELEASE
+------------
+Example:
+20 / 20 / 20 / 20
+        ↓
+20 / 20 / 20 / 80
+
+Result:
+Available = 1/4
+Buzzer = OFF
+Gate = OPEN

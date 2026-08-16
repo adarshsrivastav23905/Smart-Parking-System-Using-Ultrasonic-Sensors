@@ -1,6 +1,17 @@
+SMART PARKING SYSTEM
+SERIAL MONITOR OUTPUT
+=====================
+
+IMPORTANT:
+Replace the sample/template values below with ACTUAL captured output
+from the working Wokwi Serial Monitor before publishing this file.
+
+Example format:
+
 ==============================================
           SMART PARKING SYSTEM
 ==============================================
+
 Threshold: 35.0 cm
 
 Slot 1 | Distance: 20.1 cm | Status: OCCUPIED
@@ -12,4 +23,18 @@ Available Slots: 2/4
 Occupied Slots: 2/4
 STATUS: SPACE AVAILABLE
 GATE: OPEN
+
 ==============================================
+
+FULL PARKING EXAMPLE
+--------------------
+Slot 1 | Distance: 20.0 cm | Status: OCCUPIED
+Slot 2 | Distance: 20.2 cm | Status: OCCUPIED
+Slot 3 | Distance: 19.8 cm | Status: OCCUPIED
+Slot 4 | Distance: 20.1 cm | Status: OCCUPIED
+
+Available Slots: 0/4
+Occupied Slots: 4/4
+STATUS: PARKING FULL
+GATE: CLOSED
+BUZZER: ON
