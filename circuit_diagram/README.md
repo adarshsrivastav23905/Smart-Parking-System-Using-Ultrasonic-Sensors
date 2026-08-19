@@ -1,4 +1,4 @@
-# 🔌 Smart Parking System — Circuit Diagram
+# 🔌 Smart Parking System — Circuit Diagram 
 
 ## 1. Overview
 
