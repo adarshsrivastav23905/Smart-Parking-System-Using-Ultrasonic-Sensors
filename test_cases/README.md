@@ -13,7 +13,7 @@
 | Indicators | 4 Green + 4 Red LEDs |
 | Alert | Buzzer |
 | Gate | SG90 Servo |
-| Web Interface | ESP32 HTTP Dashboard |
+| Web Interface | ESP32 HTTP Dashboard |     
 
 ---
 
