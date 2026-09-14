@@ -8,7 +8,7 @@
 
 **Adarsh Srivastav**  
 Computer Science and Engineering (CSE) Student      
-Embedded Systems | IoT | Python | AI
+Embedded Systems | IoT | Python | AI   
 
 ---
 
