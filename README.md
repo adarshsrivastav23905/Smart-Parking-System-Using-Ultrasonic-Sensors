@@ -25,7 +25,7 @@ The number of available parking spaces is calculated in real time and presented 
 - 🔴 Red LED for OCCUPIED slots
 - 🔊 Buzzer for parking-full alert
 - 🚧 SG90 servo for capacity-based gate control
-- 🌐 ESP32-hosted HTTP web dashboard
+- 🌐 ESP32-hosted HTTP web dashboard.    
 - 📟 Serial Monitor debugging
 
 The complete prototype was developed and validated virtually using **Wokwi** with **ESP32 and PlatformIO**, providing practical experience in ultrasonic sensing, GPIO control, I²C communication, PWM, state management, Wi-Fi networking, HTTP serving, embedded programming, debugging, testing, and technical documentation.
