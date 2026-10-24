@@ -53,7 +53,7 @@ The complete prototype was developed and validated virtually using **Wokwi** wit
 ---
 
 ## ✨ Key Features
-
+   
 - Four-slot automated parking detection
 - Four HC-SR04 ultrasonic sensors
 - ESP32 DevKit central controller
