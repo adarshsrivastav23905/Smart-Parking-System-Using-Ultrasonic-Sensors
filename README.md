@@ -42,7 +42,7 @@ The complete prototype was developed and validated virtually using **Wokwi** wit
 - Classify slots as FREE or OCCUPIED.
 - Calculate the total number of available slots.
 - Display live parking information on an OLED.
-- Provide individual visual slot indication.
+- Provide individual visual slot.   indication.
 - Generate an audio alert when parking is full.
 - Demonstrate capacity-based servo gate control.
 - Provide a browser-based parking dashboard through ESP32 Wi-Fi.
